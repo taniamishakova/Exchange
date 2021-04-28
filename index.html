@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walutowy kalkulator</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
+  <link href="css/paragraph.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/link.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="header">
+    <h1>Kalkulator walut online</h1>
+  </header>
+  <main>
+    <p class="paragraph--highlighted">
+      Pola wymagane oznaczone są *
+    </p>
+    <form class="form js-form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Przelicznik walut</legend>
+        <p>
+          <label>
+            <span class="form__labelText">Kwota w PLN*:</span>
+            <input class="form__input js-amount" type="number" name="pln" placeholder="Wpisz kwotę" required min="1"
+              step="any">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">Wybierz walutę</span>
+            <select class="form__select js-currency" name="currency">
+              <option name="EUR" selected>EUR</option>
+              <option name="USD">USD</option>
+              <option name="UAH">UAH</option>
+            </select>
+          </label>
+        </p>
+        <p class="form__paragraph js-result">
+          Otrzymasz:
+        </p>
+      </fieldset>
+      <button class="form__button">Przelicz</button>
+    </form>
+    <div class="table__container">
+      <table class="table">
+        <caption class="table__caption">Kursy walut</caption>
+        <tr>
+          <th class="table__cell table__cell--header" scope="col">Waluta</th>
+          <th class="table__cell table__cell--header" scope="col">Kurs waluty</th>
+        </tr>
+        <tr>
+          <th class="table__cell table__cell--header" scope="row">Euro</th>
+          <td class="table__cell">4,5649</td>
+        </tr>
+        <tr>
+          <th class="table__cell table__cell--header" scope="row">Dolar amerykański</th>
+          <td class="table__cell">3,7855</td>
+        </tr>
+        <tr>
+          <th class="table__cell table__cell--header" scope="row">Hrywna ukraińska</th>
+          <td class="table__cell">0,1356</td>
+        </tr>
+      </table>
+    </div>
+    <p class="paragraph">
+      Wszystkie dane do tabeli zostały pobrane z strony <a class="link" target="_blank"
+        title="Oficjalna strona kursów walut" rel="noreferrer noopener" href="https://mybank.pl/kursy-walut/">Aktualny
+        kurs walut</a> dnia 24.04.2021 r.
+    </p>
+  </main>
+
+  <footer class="footer">
+    &copy; Tania Mishakova 2021
+  </footer>
+
+</body>
+
+</html>

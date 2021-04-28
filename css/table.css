@@ -1,0 +1,33 @@
+.table {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    width: 100%;
+    max-width: 400px;
+}
+
+.table__caption {
+    caption-side: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.table__cell {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table__cell--header {
+    background-color: teal;
+    color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.table__container {
+    overflow-x: auto;
+}
