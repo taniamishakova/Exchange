@@ -7,9 +7,9 @@ html {
 }
 
 .body {
-    background-image: url("../image/tło.pdf");
+    background-image: url("../image/background.jpg");
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: 2000px;
     margin: 0 auto;
     max-width: 400px;
     width: 100%;
